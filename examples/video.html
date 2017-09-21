@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Video on a cube</title>
   </head>
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
@@ -13,7 +14,7 @@
         <video id="video-clip" autoplay loop="true" src="../video/5-seconds.mp4">
       </a-assets>
 
-      <a-video src="#video-clip" width="16" height="9" position="0 0 -1"  rotation="-90 0 0" ></a-video>
+      <a-video src="#video-clip" width="16" height="9" position="0 0 -1" rotation="-90 0 0" webkit-playsinline playsinline></a-video>
 
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
